@@ -71,7 +71,7 @@ body {
 
 .btnClear {
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 10%;
   padding: 10px 15px;
   border-radius: 6px;
@@ -85,6 +85,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .mainContainer {
+    padding: 100px 20px;
+  }
   .card {
     width: 100%;
   }
