@@ -54,7 +54,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   color: #cde8ff;
-  height: 40px;
+  min-height: 40px;
+  overflow-wrap: anywhere;
 }
 .subTitle {
   font-weight: bold;
