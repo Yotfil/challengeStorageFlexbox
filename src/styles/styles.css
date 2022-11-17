@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 14, 93, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cde8ff;
+}
+.card:hover {
+  box-shadow: 0 0 20px black;
+}
+.pic {
+  width: 200px;
+  border-radius: 50%;
+}
+.infoContainer {
+  margin-top: 20px;
+}
+.textContainer {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #cde8ff;
+  height: 40px;
+}
+.subTitle {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.subTitle:hover {
+  scale: 1.1;
+}
+.answer {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.btnClear {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #a50000;
+  color: #ffe8e8;
+  cursor: pointer;
+}
+.btnClear:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
